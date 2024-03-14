@@ -1,5 +1,6 @@
 import React from 'react'
 import "./aboutstyle.css"
+import "../App.css"
 import logo from "../assets/Sm_logo_2x.png"
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png"
