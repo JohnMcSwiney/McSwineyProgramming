@@ -1,22 +1,15 @@
 .about-container{
-    display: flex;
+    display: block;
+    padding-top: 40px;
+}
+.pretty-cont{
     background-color: #02002486;
     backdrop-filter: blur(5px) saturate(1.25);
-    width: 100%;
     border: 2px #27273fc4 solid;
-    /* height: 90%; */
-    min-height: 200px;
-    height: fit-content;
     border-radius: 30px;
-    margin: 0 0;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    padding-top: 40px;
-    flex-direction: column;
-    height: fit-content;
-    /* overflow-x: hidden; */
-    
+}
+.mar-bot{
+    margin-bottom: 40px;
 }
 .app-header{
     width: 100%;
@@ -76,6 +69,11 @@ margin-left: 10px;
 .about-text{
     max-width: 600px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .about-text h3{
  opacity: 0.8;
@@ -121,11 +119,12 @@ margin-left: 10px;
     
 }
 .filler-box{
-    height: 3000px;
+    height: 100px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
+    background-color: #02002444;
 }
 .icon{
     font-size: 10px;
@@ -155,4 +154,83 @@ margin-left: 10px;
 .icon:hover .icon-description{
     opacity: 1;
     transform: translateY(-30px);
+}
+
+.about-what_i_do{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    padding:0px 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.what_i_do-title{
+ width: 100%;
+ /* background-color: rgba(255, 255, 0, 0.137); */
+}
+.under-title{
+    width: 60px;
+    height: 5px;
+    background-color: #3931d8;
+    position: relative;
+    
+    color: #3931d8;
+}
+.title-accent{
+    height: 5px;
+    fill: #3931d8;
+    /* stroke-width: 10px;  */
+    stroke: #3931d8;
+    margin: 0;
+    transform: translateY(-10px);
+  } 
+
+  .what_i_do-content{
+    background-color: yellow;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .grid-container-what_i_do {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    grid-template-rows: repeat(2, 150px); /* Create two rows with a fixed height of 200px */
+    gap: 40px;
+    padding: 5px 40px; /* Optional: Add padding to the grid container */
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+.grid-item {
+    /* background-color: #f0f0f01f;  */
+    padding: 5px; 
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 15px;
+}
+.grid-icon{
+    width: 60px;
+    /* background-color: aquamarine; */
+    color: #3931d8;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.grid-text{
+    
+}
+.grid-text h2{
+    font-size: 20px;
+}
+.grid-text p{
+    font-weight: 500;
+    opacity: 0.7;
 }

@@ -18,16 +18,19 @@ import { FaVuejs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+import { BsPersonRaisedHand } from "react-icons/bs";
+import { MdDevices } from "react-icons/md";
 
 function About() {
   return (
-    <div className='about-container outfit-500'>
-        <div className='app-header'>
+    <div className='about-container outfit-500 pretty-cont' >
+        <div className='app-header mar-bot'>
             <img src={logo} className='app-logo'/>
             <h2 className='app-title outfit-700'>McSwiney</h2>
             <h2 className='app-title outfit-500'>Programming</h2>
         </div>
-        <div className='app-content'>
+        <div className='app-content mar-bot'>
             <section className='pg about-content'>
                 <div className='about-img'>
                         <img src={pfp}/>
@@ -44,7 +47,7 @@ function About() {
                 </div>
             </section>
         </div>
-        <div className='filler-box'>
+        <div className='filler-box mar-bot'>
             <div className='icon'><FaJava />Java
             <div className='icon-description'>3+ Years</div>
             </div>
@@ -85,8 +88,57 @@ function About() {
             </div>
             
         </div>
-        <div>
-            <h2><FaFigma />Experienced Figma in Prototyping</h2>
+        <div className='about-what_i_do'>
+            <div className='what_i_do-title'>
+            <h3>What I Do:</h3>
+            <svg className='title-accent'>
+                <rect width="30" height="5" />
+            </svg>
+            </div>
+            <div className='grid-container-what_i_do'>
+                <div class="grid-item">
+                    <div className='grid-icon'>
+                        <FaFigma />
+                    </div>
+                    <div className='grid-text'>
+                        <h2>Figma Prototyping:</h2>
+                        <p>I’m experienced in creating Figma Prototypes. I excel at creating beautiful designs from ideas quickly. </p>
+                    </div>
+                </div>
+                
+                <div class="grid-item">
+                    <div className='grid-icon'>
+                        <CgWebsite />
+                    </div>
+                    <div className='grid-text'>
+                        <h2>Web Design:</h2>
+                        <p>I have a myriad of experience in modern and legacy web development technologies. I have an eye for detail and won’t stop until I’m proud of my work.</p>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div className='grid-icon'>
+                    <MdDevices />
+                    </div>
+                    <div className='grid-text'>
+                        <h2>Responsive Designs:</h2>
+                        <p> I create beautiful responsive websites that please the eye and are easy to read on every screen size.</p>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div className='grid-icon'>
+                    <BsPersonRaisedHand />
+                    </div>
+                    <div className='grid-text'>
+                        <h2>Personable:</h2>
+                        <p>I’m a personable guy who’s great with clients. I’m good at building a professional relationship with clients.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+
         </div>
     </div>
   )
