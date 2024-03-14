@@ -47,6 +47,12 @@ function About() {
                 </div>
             </section>
         </div>
+        <div className='sub-title mar-l-a'>
+            <h3 className='outfit-700'>Languages & Frameworks:</h3>
+            <svg className='sub-title-accent'>
+                <rect width="60" height="5" />
+            </svg>
+            </div>
         <div className='filler-box mar-bot'>
             <div className='icon'><FaJava />Java
             <div className='icon-description'>3+ Years</div>
@@ -88,10 +94,10 @@ function About() {
             </div>
             
         </div>
-        <div className='about-what_i_do'>
-            <div className='what_i_do-title'>
-            <h3>What I Do:</h3>
-            <svg className='title-accent'>
+        <div className='about-what_i_do mar-bot'>
+            <div className='sub-title'>
+            <h3 className='outfit-700'>What I Do:</h3>
+            <svg className='sub-title-accent'>
                 <rect width="30" height="5" />
             </svg>
             </div>
@@ -101,8 +107,8 @@ function About() {
                         <FaFigma />
                     </div>
                     <div className='grid-text'>
-                        <h2>Figma Prototyping:</h2>
-                        <p>I’m experienced in creating Figma Prototypes. I excel at creating beautiful designs from ideas quickly. </p>
+                        <h2 className='outfit-600'>Figma Prototyping:</h2>
+                        <p className='outfit-500'>I’m experienced in creating Figma Prototypes. I excel at creating beautiful designs from ideas quickly. </p>
                     </div>
                 </div>
                 
@@ -111,8 +117,8 @@ function About() {
                         <CgWebsite />
                     </div>
                     <div className='grid-text'>
-                        <h2>Web Design:</h2>
-                        <p>I have a myriad of experience in modern and legacy web development technologies. I have an eye for detail and won’t stop until I’m proud of my work.</p>
+                        <h2 className='outfit-600'>Web Design:</h2>
+                        <p className='outfit-500'>I have a myriad of experience in modern and legacy web development technologies. I have an eye for detail and won’t stop until I’m proud of my work.</p>
                     </div>
                 </div>
 
@@ -121,8 +127,8 @@ function About() {
                     <MdDevices />
                     </div>
                     <div className='grid-text'>
-                        <h2>Responsive Designs:</h2>
-                        <p> I create beautiful responsive websites that please the eye and are easy to read on every screen size.</p>
+                        <h2 className='outfit-600'>Responsive Designs:</h2>
+                        <p className='outfit-500'> I create beautiful responsive websites that please the eye and are easy to read on every screen size.</p>
                     </div>
                 </div>
 
@@ -131,8 +137,8 @@ function About() {
                     <BsPersonRaisedHand />
                     </div>
                     <div className='grid-text'>
-                        <h2>Personable:</h2>
-                        <p>I’m a personable guy who’s great with clients. I’m good at building a professional relationship with clients.</p>
+                        <h2 className='outfit-600'>Personable:</h2>
+                        <p className='outfit-500'>I’m a personable guy who’s great with clients. I’m good at building a professional relationship with clients.</p>
                     </div>
                 </div>
                 
