@@ -22,6 +22,7 @@ import { FaFigma } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { BsPersonRaisedHand } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
+import { FaBlackTie } from "react-icons/fa";
 
 function About() {
   return (
@@ -54,44 +55,44 @@ function About() {
                 <rect width="60" height="5" />
             </svg>
             </div>
-        <div className='filler-box mar-bot'>
+        <div className='language-box mar-bot'>
             <div className='icon'><FaJava />Java
-            <div className='icon-description'>3+ Years</div>
+            
             </div>
 
             <div className='icon'><IoLogoJavascript />Javascript
-            <div className='icon-description'>4+ Years</div>
+            
             </div>
 
             <div className='icon'><FaReact />React
-            <div className='icon-description'>3+ Years</div>
+            
             </div>
 
             <div className='icon'><FaVuejs/>Vue
-            <div className='icon-description'>1 Year</div>
+            
             </div>
-            <div className='icon'><IoLogoHtml5 />HTML & <IoLogoCss3 />CSS
+            {/* <div className='icon'><IoLogoHtml5 />HTML & <IoLogoCss3 />CSS
             <div className='icon-description'>4+ Years</div>
-            </div>
+            </div> */}
             <div className='icon'><FaPython />Python
-            <div className='icon-description'>2+ Years</div>
+            
             </div>
 
             <div className='icon'><SiCplusplus />C++
-            <div className='icon-description'>2+ Years</div>
+            
             </div>
 
             
             <div className='icon'><FaNodeJs />Node JS
-            <div className='icon-description'>3+ Years</div>
+            
             </div>
 
             <div className='icon'><SiMongodb />MongoDB
-            <div className='icon-description'>2+ Years</div>
+            
             </div>
             
             <div className='icon'><SiMysql />SQL
-            <div className='icon-description'>4+ Years</div>
+            
             </div>
             
         </div>
@@ -136,10 +137,11 @@ function About() {
                 <div class="grid-item">
                     <div className='grid-icon'>
                     <BsPersonRaisedHand />
+                    {/* <FaBlackTie /> */}
                     </div>
                     <div className='grid-text'>
-                        <h2 className='outfit-600'>Personable:</h2>
-                        <p className='outfit-500'>I’m a personable guy who’s great with clients. I’m good at building a professional relationship with clients.</p>
+                        <h2 className='outfit-600'>Professional:</h2>
+                        <p className='outfit-500'>I show up on time, I do my job well and I'm proud of my work. I reevaluate often and constantly improve - I complete tasks and meet deadlines. I'm friendly and a great co-worker </p>
                     </div>
                 </div>
                 
