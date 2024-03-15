@@ -1,4 +1,52 @@
- 
+body {
+  margin: 0;
+  position: relative;
+  color: white;
+  /* background: linear-gradient(0deg, #0C081C 0%, #0e198b 112.5%); */
+}
+
+section {
+  position: relative;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-base {
+  /* aspect-ratio: 900/600; */
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-image: linear-gradient(0deg, #010d4c52, #193be6bd); */
+  background-size:cover;
+ z-index: 1;
+}
+
+.performance-bg{
+  z-index: 2;
+  /* background-color: #5A37B4; */
+  background: rgb(134,80,244);
+background: linear-gradient(0deg, rgba(134,80,244,1) 0%, rgba(8,12,61,1) 100%);
+}
+
+.pretty-bg {
+  /* background-color: #09104D; */
+  /* Moving Background vv too memory intensive */
+  background-image: url('./assets/purplewave.svg');
+  /* 2 is dark blue, 6 is light blue */
+  position: absolute;
+  width: 100%;
+  /* height: 100vh; */
+  scale: 1;
+  z-index: 2;
+  background-color: #5A37B4;
+
+}
+
+
+
+
+
 .app-container{
   display: flex;
   /* align-items: center; */
@@ -15,6 +63,31 @@
   /* justify-items: flex-start; */
 }
 
+.mode-switch-cont{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+  margin-right: 10px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 5px;
+}
+.mode-switch-cont p{
+  font-size: 12.5px;
+  opacity: 0.8;
+}
+.mode-switch-btn{
+margin: auto;
+background-color: #02002486;
+border: 2px #27273fc4 solid;
+border-radius: 30px;
+padding: 5px 15px;
+font-size: 10px;
+}
 .outfit-100 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;

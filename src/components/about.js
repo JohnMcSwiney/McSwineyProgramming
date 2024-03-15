@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./aboutstyle.css"
 import "../App.css"
 import logo from "../assets/Sm_logo_2x.png"
@@ -24,7 +24,15 @@ import { BsPersonRaisedHand } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
 import { FaBlackTie } from "react-icons/fa";
 
-function About() {
+function About({p_mode}) {
+
+    const [performance_mode,set_p_mode] = useState(false);
+    useEffect(() => {
+        if(p_mode){
+            set_p_mode(p_mode);
+            console.log(p_mode);
+        }
+    },[])
   return (
     <div className='about-container outfit-500 pretty-cont' >
         <div className='app-header mar-bot'>
