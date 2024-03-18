@@ -5,24 +5,13 @@ import logo from "../assets/Sm_logo_2x.png"
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png"
 
-import { FaJava } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { IoLogoCss3 } from "react-icons/io5";
-import { SiTailwindcss } from "react-icons/si";
-import { IoLogoHtml5 } from "react-icons/io5";
-import { SiMysql } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
+import { FaJava, FaPython, FaReact, FaVuejs, FaNodeJs, FaFigma,FaBlackTie } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoCss3,IoLogoHtml5 } from "react-icons/io5";
+import { SiTailwindcss, SiMysql, SiCplusplus, SiMongodb } from "react-icons/si";
 import { DiAngularSimple } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
-import { FaVuejs } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { BsPersonRaisedHand } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
-import { FaBlackTie } from "react-icons/fa";
 
 function About({p_mode}) {
 
@@ -112,7 +101,7 @@ function About({p_mode}) {
             </svg>
             </div>
             <div className='grid-container-what_i_do'>
-                <div class="grid-item">
+                <div className="grid-item">
                     <div className='grid-icon'>
                         <FaFigma />
                     </div>
@@ -122,7 +111,7 @@ function About({p_mode}) {
                     </div>
                 </div>
                 
-                <div class="grid-item">
+                <div className="grid-item">
                     <div className='grid-icon'>
                         <CgWebsite />
                     </div>
@@ -132,7 +121,7 @@ function About({p_mode}) {
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div className="grid-item">
                     <div className='grid-icon'>
                     <MdDevices />
                     </div>
@@ -142,7 +131,7 @@ function About({p_mode}) {
                     </div>
                 </div>
 
-                <div class="grid-item">
+                <div className="grid-item">
                     <div className='grid-icon'>
                     <BsPersonRaisedHand />
                     {/* <FaBlackTie /> */}
