@@ -26,7 +26,7 @@ function App() {
     >
       <ModeBtn />
       <div className="app-container">
-        <About p_mode={{}} />
+        <About context={appContext}/>
       </div>
     </div>
   );

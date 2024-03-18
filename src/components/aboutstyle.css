@@ -1,100 +1,15 @@
 
-.about-container{
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
 .pretty-cont{
     background-color: #02002486;
     backdrop-filter: blur(5px) saturate(1.25);
     border: 2px #27273fc4 solid;
     border-radius: 30px;
 }
-.mar-bot{
-    margin-bottom: 40px;
-}
-.app-header{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding-left: 40px;
-    /* background-color: magenta; */
-    /* position: absolute;
-    top: 40;
-    left: 0; */
-}
-.app-logo{
-    width: 40px;
-    height: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.app-title{
-margin-left: 10px;
 
-}
 .app-content{
     width: 100%;
 }
-.about-content{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    /* background-color: magenta; */
-    justify-content: center;
-    padding: 20px;
-    margin: auto;
-    position: relative;
-    gap: 20px;
-}
-.about-img{
-    width: 250px;
-    height: 250px;
-    min-width: 250px;
-    min-height: 250px;
-    /* background-color: blue; */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 150px;
-    border: 10px solid #020024;
-}
-.about-img img{
-    width: 100%;
-    scale: 1;
-    margin-top: 80px;
-    transform: scaleX(-1);
-}
-.about-text{
-    max-width: 600px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.about-text h3{
- opacity: 0.8;
- margin-top: 0;
-}
-.about-text h2{
 
-}
-.about-text p{
- opacity: 0.9;
-}
-.about-buttons{
-    width: 400px;
-    /* background-color: teal; */
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
 .btn{
     padding: 5px 20px;
     border-radius: 100px;
@@ -169,23 +84,6 @@ margin-left: 10px;
     box-sizing: border-box;
     margin: auto;
 }
-.mar-l-a{
-    padding-left: 25px;
-}
-.sub-title{
- width: 100%;
- box-sizing: border-box;
- /* background-color: rgba(255, 255, 0, 0.137); */
-}
-.sub-title-accent{
-    height: 5px;
-    fill: #3931d8;
-    /* stroke-width: 10px;  */
-    stroke: #3931d8;
-    margin: 0;
-    transform: translateY(-10px);
-  } 
-
   .what_i_do-content{
     background-color: yellow;
     width: 100%;
@@ -234,3 +132,176 @@ margin-left: 10px;
     font-weight: 500;
     opacity: 0.7;
 }
+/*Mobile devices*/
+@media only screen and (max-width: 480px) {
+    
+.about-container{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    .about-content{
+        display: block;
+        
+        flex-flow: column;
+        width: 100%;
+        /* background-color: magenta; */
+        justify-content: center;
+        /* padding: 5px; */
+        margin: auto;
+        position: relative;
+        /* gap: 20px; */
+        height: 450px;
+        /* margin-bottom: 100px; */
+
+    }
+    .about-img{
+        width: 100%;
+        height: 375px;
+        
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px 25px 5px 5px;
+        /* border: 10px solid #020024; */
+
+        position: relative;
+
+    }
+    .about-img img{
+        width: 100%;
+        scale: 1;
+        margin-top: 100px;
+        transform: scaleX(-1) translateY(80px);
+        opacity: 0.8;
+        z-index: 2;
+    }
+    .about-text{
+        width: 100%;
+        min-height: 200px;
+        max-height: 250px;
+        display: flex;
+        /* padding: 5px; */
+        /* box-sizing: border-box; */
+
+        position: absolute;
+        bottom: 0;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: var(--bg-shadow-dark);
+        z-index: 3;
+        /* transform: translateY(-40px); */
+        padding: 10px;
+        box-sizing: border-box;
+
+
+        backdrop-filter: blur(1px) saturate(1.25);
+        border-top: 1px #27273fc4 solid;
+
+    }
+    .about-text h3{
+     opacity: 0.8;
+     margin-top: 0;
+     text-shadow: 1px 1px 1px var(--bg-shadow-dark);
+    }
+    .about-text h2{
+        text-shadow: 1px 1px 1px var(--bg-shadow-dark);
+    }
+    .about-text p{
+     opacity: 0.9;
+     text-shadow: 1px 1px 1px var(--bg-shadow-dark);
+    }
+    .about-buttons{
+        width: 400px;
+        /* background-color: teal; */
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .about-transition{
+        background: linear-gradient(0deg,#ffffff00 0%, var(--bg-shadow-dark) 100%);
+        font-size: 1px;
+        padding: 5px;
+        color:#ffffff00;
+    }
+  }
+  /*iPads, Tablets*/
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  }
+  /*Small screens, laptops*/
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {   
+.about-container{
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+    .about-content{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        /* background-color: magenta; */
+        justify-content: center;
+        padding: 20px;
+        margin: auto;
+        position: relative;
+        gap: 20px;
+    }
+    .about-img{
+        width: 250px;
+        height: 250px;
+        min-width: 250px;
+        min-height: 250px;
+        /* background-color: blue; */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 150px;
+        border: 10px solid #020024;
+    }
+    .about-img img{
+        width: 100%;
+        scale: 1;
+        margin-top: 80px;
+        transform: scaleX(-1);
+    }
+    .about-text{
+        max-width: 600px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .about-text h3{
+     opacity: 0.8;
+     margin-top: 0;
+    }
+    .about-text h2{
+    
+    }
+    .about-text p{
+     opacity: 0.9;
+    }
+    .about-buttons{
+        width: 400px;
+        /* background-color: teal; */
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+  }
+  /*Desktops, large screens*/
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  }
+  /*Extra large screens, TV*/
+  @media only screen and (min-width: 1201px) {
+
+  }

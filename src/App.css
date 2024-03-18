@@ -88,36 +88,128 @@ section {
   overflow-x: hidden;
 }
 
+/* global styles */
+.mar-l-a{
+  padding-left: 25px;
+}
+.mar-bot{
+  margin-bottom: 40px;
+}
+
+.app-header{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-left: 40px;
+}
+.app-logo{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.sub-title{
+width: 100%;
+box-sizing: border-box;
+}
+.sub-title-accent{
+  height: 5px;
+  fill: var(--accent);
+  margin: 0;
+  transform: translateY(-10px);
+} 
+
+
 
 /*Mobile devices*/
 @media only screen and (max-width: 480px) {
+  h2{
+     font-size: 20px;
+     margin: 0;
+  }
+  h3{
+    font-size: 15px;
+  }
+  p{
+    font-size: 13px;
+  }
   .app-container {
     padding: 10px;
   }
+  .app-logo{
+    width: 20px;
+    height: 20px;
+  }
+  .app-title{
+    margin-left: 5px;
+    }
+
 }
 /*iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .app-container {
     padding: 30px;
   }
+  .app-logo{
+    width: 40px;
+    height: 40px;
+  }
+  .app-title{
+    margin-left: 10px;
+    
+    }
 }
 /*Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .app-container {
     padding: 60px;
   }
+  .app-logo{
+    width: 40px;
+    height: 40px;
+  }
+  .app-title{
+    margin-left: 10px;
+    
+    }
+    .app-header{
+      margin-bottom: 40px;
+    }
+    .app-logo{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    
+
 }
 /*Desktops, large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .app-container {
     padding: 60px;
   }
+  .app-logo{
+    width: 40px;
+    height: 40px;
+  }
+  .app-title{
+    margin-left: 10px;
+    }
 }
 /*Extra large screens, TV*/
 @media only screen and (min-width: 1201px) {
   .app-container {
     padding: 80px;
   }
+  .app-logo{
+    width: 40px;
+    height: 40px;
+  }
+  .app-title{
+    margin-left: 10px;
+    }
 }
 
 /* font weight styles */

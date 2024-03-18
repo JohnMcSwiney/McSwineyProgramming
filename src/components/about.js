@@ -5,32 +5,33 @@ import logo from "../assets/Sm_logo_2x.png"
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png"
 
-import { FaJava, FaPython, FaReact, FaVuejs, FaNodeJs, FaFigma,FaBlackTie } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoCss3,IoLogoHtml5 } from "react-icons/io5";
-import { SiTailwindcss, SiMysql, SiCplusplus, SiMongodb } from "react-icons/si";
-import { DiAngularSimple } from "react-icons/di";
+import { FaFigma} from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { BsPersonRaisedHand } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
 
-function About({p_mode}) {
+// components
+import LanguageCont from './languageCont'
 
-    const [performance_mode,set_p_mode] = useState(false);
-    useEffect(() => {
-        if(p_mode){
-            set_p_mode(p_mode);
-            console.log(p_mode);
-        }
+function About({context}) {
+    // getting the global state variable without importing context
+    const [aboutPMode,setAboutPMode] = useState("")
+    useEffect(()=> {
+     if(context){
+        const temp = context.appP_Mode
+        setAboutPMode(temp);
+     }
     },[])
-  return (
+
+    return (
     <div className='about-container outfit-500 pretty-cont' >
-        <div className='app-header mar-bot'>
+        <div className='app-header'>
             <img src={logo} className='app-logo'/>
             <h2 className='app-title outfit-700'>McSwiney</h2>
             <h2 className='app-title outfit-500'>Programming</h2>
         </div>
         <div className='app-content mar-bot'>
-            <section className='pg about-content'>
+            <section className='about-content'>
                 <div className='about-img'>
                         <img src={pfp}/>
                 </div>
@@ -45,6 +46,9 @@ function About({p_mode}) {
                     
                 </div>
             </section>
+            <div className='about-transition'>
+                ...
+            </div>
         </div>
         <div className='sub-title mar-l-a'>
             <h3 className='outfit-700'>Languages & Frameworks:</h3>
@@ -52,47 +56,8 @@ function About({p_mode}) {
                 <rect width="60" height="5" />
             </svg>
             </div>
-        <div className='language-box mar-bot'>
-            <div className='icon'><FaJava />Java
-            
-            </div>
-
-            <div className='icon'><IoLogoJavascript />Javascript
-            
-            </div>
-
-            <div className='icon'><FaReact />React
-            
-            </div>
-
-            <div className='icon'><FaVuejs/>Vue
-            
-            </div>
-            {/* <div className='icon'><IoLogoHtml5 />HTML & <IoLogoCss3 />CSS
-            <div className='icon-description'>4+ Years</div>
-            </div> */}
-            <div className='icon'><FaPython />Python
-            
-            </div>
-
-            <div className='icon'><SiCplusplus />C++
-            
-            </div>
-
-            
-            <div className='icon'><FaNodeJs />Node JS
-            
-            </div>
-
-            <div className='icon'><SiMongodb />MongoDB
-            
-            </div>
-            
-            <div className='icon'><SiMysql />SQL
-            
-            </div>
-            
-        </div>
+            <LanguageCont/>
+        
         <div className='about-what_i_do mar-bot'>
             <div className='sub-title'>
             <h3 className='outfit-700'>What I Do:</h3>
