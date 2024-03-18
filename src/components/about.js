@@ -34,6 +34,9 @@ function About({context}) {
             <section className='about-content'>
                 <div className='about-img'>
                         <img src={pfp}/>
+                        <div className='about-img-transition'>
+                            ...
+                        </div>
                 </div>
                 <div className='about-text'>
                     <h3 className='outfit-300'>Frontend-developer</h3>
