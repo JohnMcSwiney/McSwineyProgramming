@@ -45,10 +45,13 @@ function About() {
             </p>
           </div>
           <div className="about-buttons">
-            <button className="btn btn-primary outfit-600">
-              Download Resume
-            </button>
-            <a href="https://github.com/JohnMcSwiney">
+            <a href="https://drive.google.com/file/d/1ZF4xbiNarg2b9ObI6oUBmemL__5hKg--/view?pli=1" target="_blank">
+              <button className="btn btn-primary outfit-600">
+                Download Resume
+              </button>
+            </a>
+            
+            <a href="https://github.com/JohnMcSwiney" target="_blank">
               <button className="btn btn-secondary outfit-500"><FaGithub />  Github</button>
             </a>
             <button className="btn outfit-500">Contact</button>
@@ -122,7 +125,7 @@ function About() {
             <div className="grid-text">
               <h2 className="outfit-600">Professional:</h2>
               <p className="outfit-500">
-                Show up on time, completes tasks and meets
+                Shows up on time, completes tasks and meets
                 deadlines. A great friendly co-worker, with a healthy sense of humor.
               </p>
               {/* <p className="outfit-500">
