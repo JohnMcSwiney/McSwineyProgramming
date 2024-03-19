@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./aboutstyle.css";
 import "../App.css";
+import "./responsivetext.css"
 import logo from "../assets/Sm_logo_2x.png";
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png";
@@ -30,8 +31,9 @@ function About({ context }) {
         <h2 className="app-title outfit-700">McSwiney</h2>
         <h2 className="app-title outfit-500">Programming</h2>
       </div>
-      <div className="app-content mar-bot">
-        <section className="about-content">
+
+      <div className="about-top-box mar-bot">
+        <section className="about-top-content">
           <div className="about-img">
             <div className="about-img-transition-1">...</div>
             <img src={pfp} />
@@ -41,21 +43,21 @@ function About({ context }) {
             <h3 className="outfit-300">Frontend-developer</h3>
             <h2>John (Johnny) McSwiney</h2>
             <p className="outfit-400 tablet-indented">
-              A great worker who’s personable and tech savvy. I’m a
-              problem solver who loves a project, I can find a solution to any
-              problem. I work well in groups and enjoy working with a
-              team. In school I was often the group lead because of my
-              tenacity and conflict resolution skills. I am motivated, professional,
-              and hardworking.
+              A great worker who’s personable and tech savvy. I’m a problem
+              solver who loves a project, I can find a solution to any problem.
+              I work well in groups and enjoy working with a team. In school I
+              was often the group lead because of my tenacity and conflict
+              resolution skills. I am motivated, professional, and hardworking.
             </p>
-            <div className="about-buttons">
-              <button className="btn btn-primary outfit-600">
-                Download Resume
-              </button>
-              <button className="btn outfit-500">Contact</button>
-            </div>
+          </div>
+          <div className="about-buttons">
+            <button className="btn btn-primary outfit-600">
+              Download Resume
+            </button>
+            <button className="btn outfit-500">Contact</button>
           </div>
         </section>
+
         <div className="about-transition">...</div>
       </div>
 
@@ -96,8 +98,8 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Web Design:</h2>
               <p className="outfit-500">
-                I have a myriad of experience in modern & legacy web technologies. 
-                I have an eye for detail and proud of my designs.
+                I have a myriad of experience in modern & legacy web
+                technologies. I have an eye for detail and proud of my designs.
               </p>
             </div>
           </div>
@@ -123,8 +125,8 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Professional:</h2>
               <p className="outfit-500">
-                I show up on time, do my job. I complete tasks and
-                meet deadlines. I'm friendly and a great co-worker.
+                I show up on time, do my job. I complete tasks and meet
+                deadlines. I'm a great friendly co-worker.
               </p>
               {/* <p className="outfit-500">
                 I show up on time, I do my job well and I'm proud of my work. I

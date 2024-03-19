@@ -1,3 +1,14 @@
+/* Table of contents: 
+* Base classes      : lines 9 - 159 
+* Mobile Devices    : lines 168 - 260
+* Tablets Lg mobile : lines 263 - 367
+* Sm screens/laptops: lines 370 - 478
+* lg screens/desktop: lines 481 - 
+* xl screens/tvs    : lines
+*   Notes for styling
+*   - Some styles like btns & fonts are considered Global. They're located in App.css
+*/
+
 .pretty-cont {
     background-color: #02002486;
     backdrop-filter: blur(3px) saturate(1.25);
@@ -5,22 +16,20 @@
     border-radius: 30px;
 }
 
-.app-content {
+.about-top-box {
     width: 100%;
 }
 
 .about-text p {
     text-align: justify;
-    text-justify:auto !important;
+    text-justify: auto !important;
 }
-
-
 
 .about-container {
     display: block;
 }
 
-.about-content {
+.about-top-content {
     display: block;
     flex-flow: column;
     width: 100%;
@@ -29,7 +38,7 @@
     position: relative;
 }
 
-.about-img {  
+.about-img {
     overflow: hidden;
     display: flex;
     position: relative;
@@ -67,13 +76,12 @@
 }
 
 .about-text {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
+
     z-index: 3;
     box-sizing: border-box;
-    
+
 }
 
 .about-text h3 {
@@ -81,8 +89,7 @@
     margin-top: 0;
 }
 
-.about-text h2 {
-}
+.about-text h2 {}
 
 .about-text p {
     opacity: 0.9;
@@ -90,10 +97,16 @@
 
 
 .about-buttons {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
+
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-color: rgba(255, 255, 0, 0.372);  */
+    z-index: 4;
 }
 
 .about-transition {
@@ -130,14 +143,12 @@
 
 .grid-text {}
 
-.grid-text h2 {
-}
+.grid-text h2 {}
 
 .grid-text p {
     font-weight: 500;
     opacity: 0.7;
 }
-
 
 .about-what_i_do {
     display: flex;
@@ -153,8 +164,6 @@
     width: 100%;
 }
 
-
-
 /*Mobile devices*/
 @media only screen and (max-width: 480px) {
     .about-container {
@@ -162,7 +171,7 @@
         padding-bottom: 20px;
     }
 
-    .about-content {
+    .about-top-content {
         height: 550px;
         margin-top: 20px;
     }
@@ -193,11 +202,11 @@
         gap: 5px;
         padding: 10px;
         width: 100%;
-position: absolute;
-    bottom: 0;
-background-color: var(--bg-shadow-dark);
-backdrop-filter: blur(3px) saturate(1.25);
-    border-top: 1px #27273fc4 solid;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--bg-shadow-dark);
+        backdrop-filter: blur(3px) saturate(1.25);
+        border-top: 1px #27273fc4 solid;
     }
 
     .about-text h3 {
@@ -249,6 +258,7 @@ backdrop-filter: blur(3px) saturate(1.25);
     }
 
 }
+
 /*iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .about-container {
@@ -256,9 +266,10 @@ backdrop-filter: blur(3px) saturate(1.25);
         padding-bottom: 20px;
     }
 
-    .about-content {
-        height: 600px;
+    .about-top-content {
+        height: 650px;
         margin-top: 20px;
+
     }
 
     .about-img {
@@ -289,11 +300,12 @@ backdrop-filter: blur(3px) saturate(1.25);
         gap: 5px;
         padding: 20px;
         width: 100%;
-position: absolute;
-    bottom: 0;
-background-color: var(--bg-shadow-dark);
-backdrop-filter: blur(3px) saturate(1.25);
-    border-top: 1px #27273fc4 solid;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--bg-shadow-dark);
+        backdrop-filter: blur(3px) saturate(1.25);
+        border-top: 1px #27273fc4 solid;
+        padding-bottom: 65px;
     }
 
     .about-text h3 {
@@ -310,10 +322,12 @@ backdrop-filter: blur(3px) saturate(1.25);
         opacity: 0.9;
         text-shadow: 1px 1px 1px var(--bg-shadow-dark);
     }
-    .tablet-indented{
+
+    .tablet-indented {
         padding-left: 5px;
         box-sizing: border-box;
     }
+
     .about-buttons {
         margin-top: 10px;
         padding: 10px;
@@ -360,17 +374,19 @@ backdrop-filter: blur(3px) saturate(1.25);
         padding-bottom: 40px;
     }
 
-    .about-content {
+    .about-top-content {
         display: flex;
         flex-direction: row;
         width: 100%;
         /* background-color: magenta; */
         justify-content: center;
+        align-items: flex-start;
         padding: 20px;
         box-sizing: border-box;
         margin: auto;
         position: relative;
         gap: 20px;
+        height: 350px;
     }
 
     .about-img {
@@ -409,14 +425,17 @@ backdrop-filter: blur(3px) saturate(1.25);
 
     .about-text p {
         opacity: 0.9;
+        font-size: 16px;
     }
 
     .about-buttons {
         padding: 10px;
     }
-    .about-transition{
+
+    .about-transition {
         display: none;
     }
+
     .grid-container-what_i_do {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -434,7 +453,7 @@ backdrop-filter: blur(3px) saturate(1.25);
         gap: 15px;
         position: relative;
         height: 125px;
-        
+
     }
 
     .grid-icon {
@@ -456,12 +475,126 @@ backdrop-filter: blur(3px) saturate(1.25);
         font-size: 20px;
     }
 
-    .grid-text p {
-    }
+    .grid-text p {}
 }
 
 /*Desktops, large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .about-container {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .about-top-content {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 0px;
+        box-sizing: border-box;
+        margin: auto;
+        position: relative;
+        gap: 20px;
+        height: 425px;
+    }
+
+    .about-img {
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 200px;
+        border: 10px solid #020024;
+    }
+
+    .about-img img {
+        transform: scaleX(-1);
+    }
+
+    .about-text {
+        width: auto;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* margin-top: auto; */
+        /* margin-bottom: auto; */
+        padding-right: 5px;
+        box-sizing: border-box;
+        
+    }
+
+    .about-text h3 {
+        opacity: 0.8;
+        margin-top: 0;
+        font-size: 23px;
+    }
+
+    .about-text h2 {
+        font-size: 35px !important;
+    }
+
+    .about-text p {
+        opacity: 0.9;
+        font-size: 23px;
+        text-align: justify;
+    }
+
+    .about-buttons {}
+
+    .about-transition {
+        display: none;
+    }
+
+    .grid-container-what_i_do {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 125px);
+        gap: 20px 40px;
+        padding: 5px 25px;
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+
+        /* background-color: rgba(255, 255, 0, 0.481); */
+    }
+
+    .grid-item {
+        /* background-color: #f0f0f01f;  */
+        padding: 5px;
+        gap: 15px;
+        position: relative;
+        height: 125px;
+
+    }
+
+    .grid-icon {
+        width: 45px;
+        font-size: 40px;
+        padding-top: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .grid-text {
+        margin-left: 50px;
+        position: absolute;
+        top: 5px;
+    }
+
+    .grid-text h2 {
+        font-size: 23px;
+    }
+
+    .grid-text p {
+        font-size: 20px;
+    }
+}
 
 /*Extra large screens, TV*/
 @media only screen and (min-width: 1201px) {}

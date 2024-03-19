@@ -1,0 +1,51 @@
+/* About text */
+/* this file contains text size changes at weird break points */
+.about-text p {
+    opacity: 0.9;
+    transition: all 0.05s ease-in-out;
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 480px) {
+
+}
+/*iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+/*Small screens*/
+@media only screen and (min-width: 769px) and (max-width: 780px) {
+    .about-text p {
+        font-size: 15.5px;
+        /* color: orange; */
+    }
+}
+/*laptops 1*/
+@media only screen and (min-width: 781px) and (max-width: 879px) {
+    .about-text p {
+        font-size: 16.5px;
+        /* color: red; */
+    }
+}
+/*laptops 2*/
+@media only screen and (min-width: 880px) and (max-width: 953px) {
+    .about-text p {
+        font-size: 18px;
+        /* color: rgb(89, 255, 0); */
+    }
+}
+@media only screen and (min-width: 954px) and (max-width: 1024px) {
+    .about-text p {
+        font-size: 20px;
+        /* color: rgb(0, 255, 234); */
+    }
+}
+/*Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+/*Extra large screens, TV*/
+@media only screen and (min-width: 1201px) {
+
+}
+

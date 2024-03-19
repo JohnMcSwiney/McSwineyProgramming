@@ -110,7 +110,6 @@ section {
 
 
 .sub-title{
-width: 100%;
 box-sizing: border-box;
 }
 .sub-title-accent{
@@ -171,6 +170,9 @@ box-sizing: border-box;
   .app-title{
     margin-left: 5px;
     }
+    .sub-title{
+      width: 100%;
+      }
     .mar-l-a{
       margin-left: 10px;
     }
@@ -212,6 +214,9 @@ box-sizing: border-box;
     margin-left: 13px;
     
     }
+    .sub-title{
+      width: 100%;
+      }
    .mar-l-a{
       margin-left: 20px;
     }
@@ -224,7 +229,7 @@ box-sizing: border-box;
     } 
     .btn {
       padding: 5px 20px;
-      font-size: 20px;
+      font-size: 18px;
     }
 }
 /*Small screens, laptops*/
@@ -239,6 +244,9 @@ box-sizing: border-box;
   .app-title{
     margin-left: 10px;
     }
+    .sub-title{
+      width: 100%;
+      }
     .app-header{
       margin-bottom: 40px;
     }
@@ -269,6 +277,27 @@ box-sizing: border-box;
   }
   .app-title{
     margin-left: 10px;
+    }
+    .sub-title{
+      width: 90% !important;
+      margin: auto;
+      }
+    .app-header{
+      margin-bottom: 40px;
+    }
+    .app-logo{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .mar-l-a{
+      /* padding-left: 25px; */
+    }
+    .mar-bot{
+      margin-bottom: 40px;
+    }
+    .btn {
+      padding: 5px 20px;
+      font-size: 23px;
     }
     
 }

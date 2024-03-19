@@ -4,7 +4,7 @@ const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
   const [appP_Mode, setAppP_Mode] = useState(
-    localStorage.getItem("MCSWINEY_SITE_PERFORMANCE_MODE") || "POTATO"
+    localStorage.getItem("MCSWINEY_SITE_PERFORMANCE_MODE") || "PRETTY"
   );
 
   useEffect(() => {
