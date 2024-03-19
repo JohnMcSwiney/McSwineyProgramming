@@ -11,7 +11,8 @@
     flex-wrap: wrap;
     padding: 20px 50px 20px 50px;
     box-sizing: border-box;
-    height: 200px;
+    /* height: 200px; */
+    height: fit-content;
 }
 .icon-cont{
     display: flex;
@@ -39,7 +40,10 @@
     z-index: 2;
     
 }
-
+.icon-cont h2{
+    padding-top: 5px;
+    font-size: 15px;
+}
 .icon-description {
     /* font-size: 15px; */
     position: absolute;
