@@ -89,9 +89,9 @@ section {
 }
 
 /* global styles */
-.mar-l-a{
+/* .mar-l-a{
   padding-left: 25px;
-}
+} */
 .mar-bot{
   margin-bottom: 40px;
 }
@@ -146,6 +146,13 @@ box-sizing: border-box;
   .app-title{
     margin-left: 5px;
     }
+    .mar-l-a{
+      margin-left: 10px;
+    }
+    .language-box {
+      height: 100px;
+  
+    }
 
 }
 /*iPads, Tablets*/
@@ -182,7 +189,12 @@ box-sizing: border-box;
       margin-top: auto;
       margin-bottom: auto;
     }
-    
+    .mar-l-a{
+      padding-left: 25px;
+    }
+    .language-box {
+      height: 100px;
+  }
 
 }
 /*Desktops, large screens*/
