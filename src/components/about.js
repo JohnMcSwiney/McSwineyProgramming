@@ -111,7 +111,7 @@ function About() {
             <div className="grid-text">
               <h2 className="outfit-600">Responsive Designs:</h2>
               <p className="outfit-500">
-                Creates beautiful responsive websites that please the eye and
+                Designs beautiful & responsive websites that please the eye and
                 are easy to read on every screen size.
               </p>
             </div>
