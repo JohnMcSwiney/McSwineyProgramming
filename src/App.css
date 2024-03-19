@@ -92,9 +92,7 @@ section {
 /* .mar-l-a{
   padding-left: 25px;
 } */
-.mar-bot{
-  margin-bottom: 40px;
-}
+
 
 .app-header{
   width: 100%;
@@ -149,6 +147,9 @@ box-sizing: border-box;
     .mar-l-a{
       margin-left: 10px;
     }
+    .mar-bot{
+      margin-bottom: 20px;
+    }
     .language-box {
       height: 100px;
   
@@ -191,6 +192,9 @@ box-sizing: border-box;
     }
     .mar-l-a{
       padding-left: 25px;
+    }
+    .mar-bot{
+      margin-bottom: 40px;
     }
     .language-box {
       height: 100px;

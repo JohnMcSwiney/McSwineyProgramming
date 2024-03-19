@@ -1,7 +1,7 @@
 import React from 'react'
 
 function LangIcon({children, title}) {
-    console.log(title)
+    // console.log(title)
     return (
     <div className='icon-cont'>
         <div className="icon">{children}</div>

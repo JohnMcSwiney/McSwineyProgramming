@@ -30,7 +30,7 @@ function About({ context }) {
         <h2 className="app-title outfit-700">McSwiney</h2>
         <h2 className="app-title outfit-500">Programming</h2>
       </div>
-      <div className="app-content">
+      <div className="app-content mar-bot">
         <section className="about-content">
           <div className="about-img">
             <div className="about-img-transition-1">...</div>
@@ -41,12 +41,12 @@ function About({ context }) {
             <h3 className="outfit-300">Frontend-developer</h3>
             <h2>John (Johnny) McSwiney</h2>
             <p className="outfit-400">
-              A great worker who’s personable and incredibly tech savvy. I’m a
-              problem solver who loves a project - I can find a solution to any
-              problem quickly. I work well in groups and enjoy working with a
-              team, in school I was often headed as the group lead because of my
-              tenacity and conflict resolution skills. I am motivated,
-              hardworking, and personable.
+              A great worker who’s personable and tech savvy. I’m a
+              problem solver who loves a project, I can find a solution to any
+              problem. I work well in groups and enjoy working with a
+              team. In school I was often the group lead because of my
+              tenacity and conflict resolution skills. I am motivated, professional,
+              and hardworking.
             </p>
             <div className="about-buttons">
               <button className="btn btn-primary outfit-600">
@@ -59,7 +59,7 @@ function About({ context }) {
         <div className="about-transition">...</div>
       </div>
 
-      <div className="sub-title mar-l-a">
+      <div className="sub-title mar-l-a ">
         <h3 className="outfit-700">Languages & Frameworks:</h3>
         <svg className="sub-title-accent">
           <rect width="60" height="5" />
