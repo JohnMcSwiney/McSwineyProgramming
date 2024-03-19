@@ -84,7 +84,7 @@ function About({ context }) {
               <h2 className="outfit-600">Figma Prototyping:</h2>
               <p className="outfit-500">
                 I’m experienced in creating Figma Prototypes. I excel at
-                creating beautiful designs from ideas quickly.{" "}
+                creating beautiful designs from ideas quickly.
               </p>
             </div>
           </div>
@@ -96,9 +96,8 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Web Design:</h2>
               <p className="outfit-500">
-                I have a myriad of experience in modern and legacy web
-                development technologies. I have an eye for detail and won’t
-                stop until I’m proud of my work.
+                I have a myriad of experience in modern & legacy web technologies. 
+                I have an eye for detail and proud of my designs.
               </p>
             </div>
           </div>
@@ -110,7 +109,6 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Responsive Designs:</h2>
               <p className="outfit-500">
-                {" "}
                 I create beautiful responsive websites that please the eye and
                 are easy to read on every screen size.
               </p>
@@ -125,10 +123,14 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Professional:</h2>
               <p className="outfit-500">
+                I show up on time, do my job. I complete tasks and
+                meet deadlines. I'm friendly and a great co-worker.
+              </p>
+              {/* <p className="outfit-500">
                 I show up on time, I do my job well and I'm proud of my work. I
                 reevaluate often and constantly improve - I complete tasks and
-                meet deadlines. I'm friendly and a great co-worker{" "}
-              </p>
+                meet deadlines. I'm friendly and a great co-worker
+              </p> */}
             </div>
           </div>
         </div>

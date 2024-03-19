@@ -26,9 +26,7 @@
 }
 
 .what_i_do-content {
-    background-color: yellow;
     width: 100%;
-    min-height: 300px;
 }
 
 
@@ -401,10 +399,11 @@
     .about-content {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 100%;
         /* background-color: magenta; */
         justify-content: center;
         padding: 20px;
+        box-sizing: border-box;
         margin: auto;
         position: relative;
         gap: 20px;
@@ -432,13 +431,15 @@
     }
 
     .about-text {
-        max-width: 600px;
+        width: auto;
         height: 250px;
         display: flex;
         flex-direction: column;
         gap: 15px;
         margin-top: auto;
         margin-bottom: auto;
+        padding-right: 5px;
+        box-sizing: border-box;
     }
 
     .about-text h3 {
@@ -453,7 +454,7 @@
     }
 
     .about-buttons {
-        width: 400px;
+        width: 100%;
         /* background-color: teal; */
         display: flex;
         justify-content: space-around;
@@ -464,14 +465,15 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* Create two equal-width columns */
-        grid-template-rows: repeat(2, 80px);
+        grid-template-rows: repeat(2, 125px);
         /* Create two rows with a fixed height of 200px */
-        gap: 40px;
-        padding: 5px 40px;
+        gap: 15px;
+        padding: 5px 25px;
         /* Optional: Add padding to the grid container */
         box-sizing: border-box;
         width: 100%;
         margin: auto;
+        height: fit-content;
     }
 
     .grid-item {
@@ -483,21 +485,31 @@
         box-sizing: border-box;
         align-items: center;
         gap: 15px;
+        position: relative;
+        height: 125px;
+        
     }
 
     .grid-icon {
-        width: 60px;
+        width: 45px;
         /* background-color: aquamarine; */
         color: #3931d8;
-        font-size: 60px;
+        font-size: 40px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         box-sizing: border-box;
         padding-top: 5px;
+        position: absolute;
+        top: 10px;
+        left: 0;
     }
 
-    .grid-text {}
+    .grid-text {
+        margin-left: 50px;
+        position: absolute;
+        top: 5px;
+    }
 
     .grid-text h2 {
         font-size: 20px;
@@ -506,6 +518,7 @@
     .grid-text p {
         font-weight: 500;
         opacity: 0.7;
+        /* text-align: justify; */
     }
 }
 
