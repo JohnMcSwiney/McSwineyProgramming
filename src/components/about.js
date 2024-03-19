@@ -69,7 +69,7 @@ function About({ context }) {
       <LanguageCont />
 
       <div className="about-what_i_do mar-bot">
-        <div className="sub-title">
+        <div className="sub-title mar-l-a">
           <h3 className="outfit-700">What I Do:</h3>
           <svg className="sub-title-accent">
             <rect width="30" height="5" />

@@ -42,8 +42,8 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 80%;
-    padding: 0px 20px;
+    width: 100%;
+    /* padding: 0px 20px; */
     box-sizing: border-box;
     margin: auto;
 }
@@ -54,53 +54,7 @@
     min-height: 300px;
 }
 
-.grid-container-what_i_do {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Create two equal-width columns */
-    grid-template-rows: repeat(2, 80px);
-    /* Create two rows with a fixed height of 200px */
-    gap: 40px;
-    padding: 5px 40px;
-    /* Optional: Add padding to the grid container */
-    box-sizing: border-box;
-    width: 100%;
-    margin: auto;
-}
 
-.grid-item {
-    /* background-color: #f0f0f01f;  */
-    padding: 5px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-items: center;
-    gap: 15px;
-}
-
-.grid-icon {
-    width: 60px;
-    /* background-color: aquamarine; */
-    color: #3931d8;
-    font-size: 60px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    box-sizing: border-box;
-    padding-top: 5px;
-}
-
-.grid-text {}
-
-.grid-text h2 {
-    font-size: 20px;
-}
-
-.grid-text p {
-    font-weight: 500;
-    opacity: 0.7;
-}
 
 /*Mobile devices*/
 @media only screen and (max-width: 480px) {
@@ -208,11 +162,13 @@
     }
 
     .about-buttons {
-        width: 400px;
+        margin-top: 10px;
+        width: 100%;
         /* background-color: teal; */
         display: flex;
         justify-content: space-around;
         padding: 10px;
+        box-sizing: border-box;
     }
 
     .about-transition {
@@ -225,7 +181,54 @@
     .language-box {
         height: 200px;
       }
-
+      .grid-container-what_i_do {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        /* Create two equal-width columns */
+        grid-template-rows: repeat(2, 80px);
+        /* Create two rows with a fixed height of 200px */
+        gap: 40px;
+        padding: 5px 40px;
+        /* Optional: Add padding to the grid container */
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .grid-item {
+        /* background-color: #f0f0f01f;  */
+        padding: 5px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .grid-icon {
+        width: 60px;
+        /* background-color: aquamarine; */
+        color: #3931d8;
+        font-size: 60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-top: 5px;
+    }
+    
+    .grid-text {}
+    
+    .grid-text h2 {
+        font-size: 20px;
+    }
+    
+    .grid-text p {
+        font-weight: 500;
+        opacity: 0.7;
+    }
     
 }
 
@@ -300,6 +303,53 @@
         display: flex;
         justify-content: space-around;
         padding: 10px;
+    }
+    .grid-container-what_i_do {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Create two equal-width columns */
+        grid-template-rows: repeat(2, 80px);
+        /* Create two rows with a fixed height of 200px */
+        gap: 40px;
+        padding: 5px 40px;
+        /* Optional: Add padding to the grid container */
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .grid-item {
+        /* background-color: #f0f0f01f;  */
+        padding: 5px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .grid-icon {
+        width: 60px;
+        /* background-color: aquamarine; */
+        color: #3931d8;
+        font-size: 60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-top: 5px;
+    }
+    
+    .grid-text {}
+    
+    .grid-text h2 {
+        font-size: 20px;
+    }
+    
+    .grid-text p {
+        font-weight: 500;
+        opacity: 0.7;
     }
 }
 
