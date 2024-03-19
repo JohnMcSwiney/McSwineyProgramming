@@ -8,8 +8,15 @@
 /*Mobile devices*/
 @media only screen and (max-width: 480px) {}
 
+/* Mobile lg */
+@media only screen and (min-width: 481px) and (max-width: 526px) {
+    
+}
+
 /*iPads, Tablets*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
 
 /*Small screens*/
 @media only screen and (min-width: 769px) and (max-width: 780px) {
