@@ -10,14 +10,6 @@ import ModeBtn from "./components/ModeBtn/ModeBtn";
 function App() {
   const appContext = useAppContext();
   const p_mode = appContext.appP_Mode;
-  // const toggle_mode = () => {
-  //   console.log(p_mode);
-  //   set_p_mode(!p_mode);
-  // }
-  useEffect(() => {
-    console.log("variable changed");
-  }, [p_mode]);
-
   return (
     <div
       className={`bg-base ${
@@ -26,7 +18,7 @@ function App() {
     >
       <ModeBtn />
       <div className="app-container">
-        <About context={appContext}/>
+        <About/>
       </div>
     </div>
   );

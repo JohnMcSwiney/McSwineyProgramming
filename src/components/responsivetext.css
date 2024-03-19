@@ -6,13 +6,11 @@
 }
 
 /*Mobile devices*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {}
 
-}
 /*iPads, Tablets*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
 
-}
 /*Small screens*/
 @media only screen and (min-width: 769px) and (max-width: 780px) {
     .about-text p {
@@ -20,6 +18,7 @@
         /* color: orange; */
     }
 }
+
 /*laptops 1*/
 @media only screen and (min-width: 781px) and (max-width: 879px) {
     .about-text p {
@@ -27,6 +26,7 @@
         /* color: red; */
     }
 }
+
 /*laptops 2*/
 @media only screen and (min-width: 880px) and (max-width: 953px) {
     .about-text p {
@@ -34,18 +34,81 @@
         /* color: rgb(89, 255, 0); */
     }
 }
+
 @media only screen and (min-width: 954px) and (max-width: 1024px) {
     .about-text p {
         font-size: 20px;
         /* color: rgb(0, 255, 234); */
     }
 }
+
 /*Desktops, large screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
 
-}
 /*Extra large screens, TV*/
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) and (max-width: 1354px) {
+    .about-img {
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+    }
 
+    .about-text h3 {
+
+        font-size: 23px;
+    }
+
+    .about-text h2 {
+        font-size: 35px !important;
+    }
+
+    .about-text p {
+        opacity: 0.9;
+        font-size: 23px;
+        text-align: justify;
+    }
 }
 
+@media only screen and (min-width: 1355px) and (max-width: 1599px) {
+    .about-img {
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .about-text h3 {
+        font-size: 23px;
+    }
+
+    .about-text h2 {
+        font-size: 40px !important;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .about-img {
+        width: 400px;
+        height: 400px;
+        min-width: 400px;
+        min-height: 400px;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+    }
+
+    .about-text h2 {
+        font-size: 40px !important;
+    }
+
+    .about-text p {
+
+        font-size: 30px;
+    }
+}

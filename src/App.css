@@ -11,6 +11,7 @@
 
   /* lower opacity colors */
   --bg-shadow-dark: #02002486;
+  --bg-shadow: #02002486;
   --bg-shadow-light: #02002444;
   --pri-shadow: #5a37b3c4;
   --sec-shadow: #27273fc4;
@@ -145,7 +146,11 @@ box-sizing: border-box;
   box-shadow: #3931d870 0px 2px 5px;
 }
 
-.btn-secondary {}
+.btn-secondary {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
 
 
 /*Mobile devices*/
@@ -313,6 +318,21 @@ box-sizing: border-box;
   .app-title{
     margin-left: 10px;
     }
+    .sub-title{
+      width: 75% !important;
+      margin: auto;
+      font-size: 25px;
+      }
+      .mar-l-a{
+        /* padding-left: 25px; */
+      }
+      .mar-bot{
+        margin-bottom: 40px;
+      }
+      .btn {
+        padding: 5px 20px;
+        font-size: 23px;
+      }
 }
 
 /* font weight styles */

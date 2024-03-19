@@ -6,26 +6,21 @@ import logo from "../assets/Sm_logo_2x.png";
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png";
 
-import { FaFigma } from "react-icons/fa";
+import { FaFigma,FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { BsPersonRaisedHand } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
 
-// components
+// components & context
+import { useAppContext } from "../context/AppContext";
 import LanguageCont from "./LanguageBox/languageCont";
 
-function About({ context }) {
-  // getting the global state variable without importing context
-  const [aboutPMode, setAboutPMode] = useState("");
-  useEffect(() => {
-    if (context) {
-      const temp = context.appP_Mode;
-      setAboutPMode(temp);
-    }
-  }, []);
+function About() {
+  const appContext = useAppContext();
+  const p_mode = appContext.appP_Mode;
 
   return (
-    <div className="about-container outfit-500 pretty-cont">
+    <div className={`about-container outfit-500 ${p_mode === "POTATO" ? "potato-cont" : "pretty-cont"}`}>
       <div className="app-header">
         <img src={logo} className="app-logo" />
         <h2 className="app-title outfit-700">McSwiney</h2>
@@ -43,17 +38,19 @@ function About({ context }) {
             <h3 className="outfit-300">Frontend-developer</h3>
             <h2>John (Johnny) McSwiney</h2>
             <p className="outfit-400 tablet-indented">
-              A great worker who’s personable and tech savvy. I’m a problem
-              solver who loves a project, I can find a solution to any problem.
-              I work well in groups and enjoy working with a team. In school I
-              was often the group lead because of my tenacity and conflict
-              resolution skills. I am motivated, professional, and hardworking.
+              A great worker who’s personable and tech savvy. A problem
+              solver who loves a project, able to find a solution to any problem.
+              Works well in groups and enjoys working with a team. Often the group lead in school because of tenacity and conflict
+              resolution skills. Highly motivated, professional, and hardworking.
             </p>
           </div>
           <div className="about-buttons">
             <button className="btn btn-primary outfit-600">
               Download Resume
             </button>
+            <a href="https://github.com/JohnMcSwiney">
+              <button className="btn btn-secondary outfit-500"><FaGithub />  Github</button>
+            </a>
             <button className="btn outfit-500">Contact</button>
           </div>
         </section>
@@ -85,7 +82,7 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Figma Prototyping:</h2>
               <p className="outfit-500">
-                I’m experienced in creating Figma Prototypes. I excel at
+                Experienced creating Figma Prototypes.Excels at
                 creating beautiful designs from ideas quickly.
               </p>
             </div>
@@ -98,8 +95,8 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Web Design:</h2>
               <p className="outfit-500">
-                I have a myriad of experience in modern & legacy web
-                technologies. I have an eye for detail and proud of my designs.
+                Has a myriad of experience in modern & legacy web
+                technologies, with an eye for detail and a history of attractive designs.
               </p>
             </div>
           </div>
@@ -111,7 +108,7 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Responsive Designs:</h2>
               <p className="outfit-500">
-                I create beautiful responsive websites that please the eye and
+                Creates beautiful responsive websites that please the eye and
                 are easy to read on every screen size.
               </p>
             </div>
@@ -125,8 +122,8 @@ function About({ context }) {
             <div className="grid-text">
               <h2 className="outfit-600">Professional:</h2>
               <p className="outfit-500">
-                I show up on time, do my job. I complete tasks and meet
-                deadlines. I'm a great friendly co-worker.
+                Show up on time, completes tasks and meets
+                deadlines. A great friendly co-worker, with a healthy sense of humor.
               </p>
               {/* <p className="outfit-500">
                 I show up on time, I do my job well and I'm proud of my work. I

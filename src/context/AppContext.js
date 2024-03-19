@@ -8,7 +8,7 @@ const AppContextProvider = ({ children }) => {
   );
 
   useEffect(() => {
-    console.log("Setting Performance Mode " + appP_Mode);
+    console.log("Setting Performance Mode: " + appP_Mode);
     localStorage.setItem("MCSWINEY_SITE_PERFORMANCE_MODE", appP_Mode);
   }, [appP_Mode]);
 

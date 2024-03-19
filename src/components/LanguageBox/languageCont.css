@@ -117,5 +117,23 @@
 }
 /*Extra large screens, TV*/
 @media only screen and (min-width: 1201px) {
-
+    .language-box {
+        gap: 15px 30px;
+        padding: 20px 50px 20px 50px;
+    }
+    .icon-cont{
+        gap: 10px;
+    }
+    
+    .icon {
+        width: 65px;
+        height: 65px;
+        font-size: 55px;
+        padding: 2.5px;
+        border-radius: 10px;
+    }
+    .icon-cont h2{
+        font-size: 25px;
+        margin: 0;
+    }
 }
