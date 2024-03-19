@@ -37,10 +37,10 @@ function About({ context }) {
             <img src={pfp} />
             <div className="about-img-transition-2">...</div>
           </div>
-          <div className="about-text">
+          <div className="about-text ">
             <h3 className="outfit-300">Frontend-developer</h3>
             <h2>John (Johnny) McSwiney</h2>
-            <p className="outfit-400">
+            <p className="outfit-400 tablet-indented">
               A great worker who’s personable and tech savvy. I’m a
               problem solver who loves a project, I can find a solution to any
               problem. I work well in groups and enjoy working with a

@@ -120,6 +120,33 @@ box-sizing: border-box;
   transform: translateY(-10px);
 } 
 
+.btn {
+  border-radius: 150px;
+  color: white;
+  background-color: #020024;
+  cursor: pointer;
+  border: 3px solid #020024;
+  transition: all ease-in-out 0.3s;
+  
+}
+
+.btn:hover {
+  scale: 1.05;
+  box-shadow: #3931d870 0px 2px 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn-primary {
+  border: 3px solid #3931d8ab;
+
+}
+
+.btn-primary:hover {
+  border: 3px solid #3931d8;
+  box-shadow: #3931d870 0px 2px 5px;
+}
+
+.btn-secondary {}
 
 
 /*Mobile devices*/
@@ -155,9 +182,25 @@ box-sizing: border-box;
   
     }
 
+    .btn {
+      padding: 5px 20px;
+      font-size: 15px;
+    }
+    
+ 
 }
 /*iPads, Tablets*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  h2{
+     font-size: 23px;
+     margin: 0;
+  }
+  h3{
+    font-size: 23px;
+  }
+  p{
+    font-size: 20px;
+  }
   .app-container {
     padding: 30px;
   }
@@ -168,6 +211,20 @@ box-sizing: border-box;
   .app-title{
     margin-left: 10px;
     
+    }
+   .mar-l-a{
+      margin-left: 10px;
+    }
+    .mar-bot{
+      margin-bottom: 20px;
+    }
+    .language-box {
+      height: 100px;
+  
+    } 
+    .btn {
+      padding: 5px 20px;
+      font-size: 20px;
     }
 }
 /*Small screens, laptops*/
