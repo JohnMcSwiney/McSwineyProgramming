@@ -173,14 +173,15 @@
 }
 
 /*Mobile devices*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 525px) {
+/* @media only screen and (max-width: 480px) { */
     .about-container {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
     .about-top-content {
-        height: 550px;
+        height: 650px;
         margin-top: 20px;
     }
 
@@ -206,7 +207,7 @@
 
     .about-text {
         min-height: 200px;
-        max-height: 250px;
+        max-height: 345px;
         gap: 5px;
         padding: 10px;
         width: 100%;
@@ -215,6 +216,7 @@
         background-color: var(--bg-shadow-dark);
         backdrop-filter: blur(3px) saturate(1.25);
         border-top: 1px #27273fc4 solid;
+        padding-bottom: 150px;
     }
 
     .about-text h3 {
@@ -233,6 +235,12 @@
     .about-buttons {
         margin-top: 10px;
         padding: 10px;
+        flex-direction: column;
+        /* background-color: teal; */
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+        /* gap: 10px; */
     }
 
 
@@ -268,7 +276,8 @@
 }
 
 /*iPads, Tablets*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* @media only screen and (min-width: 481px) and (max-width: 768px) { */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
     .about-container {
         padding-top: 20px;
         padding-bottom: 20px;

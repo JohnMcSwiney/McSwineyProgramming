@@ -77,6 +77,7 @@ section {
   background-color: var(--bg-purple);
 
 }
+
 /* base container */
 .app-container {
   display: flex;
@@ -95,7 +96,7 @@ section {
 } */
 
 
-.app-header{
+.app-header {
   width: 100%;
   height: 40px;
   display: flex;
@@ -104,21 +105,23 @@ section {
   flex-direction: row;
   padding-left: 40px;
 }
-.app-logo{
+
+.app-logo {
   margin-top: auto;
   margin-bottom: auto;
 }
 
 
-.sub-title{
-box-sizing: border-box;
+.sub-title {
+  box-sizing: border-box;
 }
-.sub-title-accent{
+
+.sub-title-accent {
   height: 5px;
   fill: var(--accent);
   margin: 0;
   transform: translateY(-10px);
-} 
+}
 
 .btn {
   border-radius: 150px;
@@ -127,7 +130,7 @@ box-sizing: border-box;
   cursor: pointer;
   border: 3px solid #020024;
   transition: all ease-in-out 0.3s;
-  
+
 }
 
 .btn:hover {
@@ -154,185 +157,233 @@ box-sizing: border-box;
 
 
 /*Mobile devices*/
-@media only screen and (max-width: 480px) {
-  h2{
-     font-size: 20px;
-     margin: 0;
+
+/* @media only screen and (max-width: 480px) { */
+@media only screen and (max-width: 525px) {
+  h2 {
+    font-size: 20px;
+    margin: 0;
   }
-  h3{
+
+  h3 {
     font-size: 15px;
   }
-  p{
+
+  p {
     font-size: 13px;
   }
+
   .app-container {
     padding: 10px;
   }
-  .app-logo{
+
+  .app-logo {
     width: 20px;
     height: 20px;
   }
-  .app-title{
-    margin-left: 5px;
-    }
-    .sub-title{
-      width: 100%;
-      }
-    .mar-l-a{
-      margin-left: 10px;
-    }
-    .mar-bot{
-      margin-bottom: 20px;
-    }
-    .language-box {
-      height: 100px;
-  
-    }
 
-    .btn {
-      padding: 5px 20px;
-      font-size: 12px;
-    }
-    
- 
-}
-/*iPads, Tablets*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  h2{
-     font-size: 23px;
-     margin: 0;
+  .app-title {
+    margin-left: 5px;
   }
-  h3{
+
+  .sub-title {
+    width: 100%;
+  }
+
+  .mar-l-a {
+    margin-left: 10px;
+  }
+
+  .mar-bot {
+    margin-bottom: 20px;
+  }
+
+  .language-box {
+    height: 100px;
+
+  }
+
+  .btn {
+    padding: 5px 25px;
+    font-size: 15px;
+  }
+
+
+}
+
+/*iPads, Tablets*/
+/* @media only screen and (min-width: 481px) and (max-width: 768px) { */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
+  h2 {
+    font-size: 23px;
+    margin: 0;
+  }
+
+  h3 {
     font-size: 23px;
   }
-  p{
+
+  p {
     font-size: 20px;
   }
+
   .app-container {
     padding: 30px;
   }
-  .app-logo{
+
+  .app-logo {
     width: 40px;
     height: 40px;
   }
-  .app-title{
+
+  .app-title {
     margin-left: 13px;
-    
-    }
-    .sub-title{
-      width: 100%;
-      }
-   .mar-l-a{
-      margin-left: 20px;
-    }
-    .mar-bot{
-      margin-bottom: 20px;
-    }
-    .language-box {
-      height: 100px;
-  
-    } 
-    .btn {
-      padding: 5px 20px;
-      font-size: 18px;
-    }
+
+  }
+
+  .sub-title {
+    width: 100%;
+  }
+
+  .mar-l-a {
+    margin-left: 20px;
+  }
+
+  .mar-bot {
+    margin-bottom: 20px;
+  }
+
+  .language-box {
+    height: 100px;
+
+  }
+
+  .btn {
+    padding: 5px 20px;
+    font-size: 18px;
+  }
 }
+
 /*Small screens, laptops*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .app-container {
     padding: 60px;
   }
-  .app-logo{
+
+  .app-logo {
     width: 40px;
     height: 40px;
   }
-  .app-title{
+
+  .app-title {
     margin-left: 10px;
-    }
-    .sub-title{
-      width: 100%;
-      }
-    .app-header{
-      margin-bottom: 40px;
-    }
-    .app-logo{
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-    .mar-l-a{
-      padding-left: 25px;
-    }
-    .mar-bot{
-      margin-bottom: 40px;
-    }
-    .btn {
-      padding: 5px 20px;
-      font-size: 15px;
-    }
+  }
+
+  .sub-title {
+    width: 100%;
+  }
+
+  .app-header {
+    margin-bottom: 40px;
+  }
+
+  .app-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .mar-l-a {
+    padding-left: 25px;
+  }
+
+  .mar-bot {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
 
 }
+
 /*Desktops, large screens*/
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .app-container {
     padding: 60px;
   }
-  .app-logo{
+
+  .app-logo {
     width: 40px;
     height: 40px;
   }
-  .app-title{
+
+  .app-title {
     margin-left: 10px;
-    }
-    .sub-title{
-      width: 90% !important;
-      margin: auto;
-      }
-    .app-header{
-      margin-bottom: 40px;
-    }
-    .app-logo{
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-    .mar-l-a{
-      /* padding-left: 25px; */
-    }
-    .mar-bot{
-      margin-bottom: 40px;
-    }
-    .btn {
-      padding: 5px 20px;
-      font-size: 23px;
-    }
-    
+  }
+
+  .sub-title {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  .app-header {
+    margin-bottom: 40px;
+  }
+
+  .app-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .mar-l-a {
+    /* padding-left: 25px; */
+  }
+
+  .mar-bot {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    font-size: 23px;
+  }
+
 }
+
 /*Extra large screens, TV*/
 @media only screen and (min-width: 1201px) {
   .app-container {
     padding: 80px;
   }
-  .app-logo{
+
+  .app-logo {
     width: 40px;
     height: 40px;
   }
-  .app-title{
+
+  .app-title {
     margin-left: 10px;
-    }
-    .sub-title{
-      width: 75% !important;
-      margin: auto;
-      font-size: 25px;
-      }
-      .mar-l-a{
-        /* padding-left: 25px; */
-      }
-      .mar-bot{
-        margin-bottom: 40px;
-      }
-      .btn {
-        padding: 5px 20px;
-        font-size: 23px;
-      }
+  }
+
+  .sub-title {
+    width: 75% !important;
+    margin: auto;
+    font-size: 25px;
+  }
+
+  .mar-l-a {
+    /* padding-left: 25px; */
+  }
+
+  .mar-bot {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    font-size: 23px;
+  }
 }
 
 /* font weight styles */
