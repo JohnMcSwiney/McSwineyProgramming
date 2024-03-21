@@ -10,6 +10,7 @@
   --accent2: #0600C2;
 
   /* lower opacity colors */
+  --bg-shadow-extra-dark: #020024d5;
   --bg-shadow-dark: #02002486;
   --bg-shadow: #02002486;
   --bg-shadow-light: #02002444;
@@ -147,6 +148,7 @@ section {
 .btn-primary:hover {
   border: 3px solid #3931d8;
   box-shadow: #3931d870 0px 2px 5px;
+  background-color: #3931d8;
 }
 
 .btn-secondary {
@@ -155,6 +157,59 @@ section {
   gap: 5px;
 }
 
+.inp-text{
+  border-radius: 150px;
+  color: rgba(255, 255, 255, 0.839);
+  background-color: var(--secondary);
+  cursor: pointer;
+  border: 3px solid var(--primary);
+  transition: all ease-in-out 0.3s;
+  width: 600px;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 2.5px;
+}
+.contact-submit{
+  width: 600px;
+}
+input[type="text"]:focus{
+ border: var(--accent) solid 2px;
+}
+/* https://moderncss.dev/pure-css-custom-checkbox-style/ */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--text);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.10em solid currentColor;
+  border-radius: 0.25em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+
+
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  transform: scale(0);
+  transition: 70ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--primary);
+  background-color: var(--primary);
+  /* transform-origin: bottom left; */
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.form-control + .form-control {
+  margin-top: 1em;
+}
 
 /*Mobile devices*/
 

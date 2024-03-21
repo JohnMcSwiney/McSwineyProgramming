@@ -17,10 +17,10 @@ import LanguageCont from "./LanguageBox/languageCont";
 
 function About() {
   const appContext = useAppContext();
-  const p_mode = appContext.appP_Mode;
-
+  const P_MODE = appContext.appP_Mode;
+  const popupTypes = ["NONE","CONTACT","EXTERNAL"];
   return (
-    <div className={`about-container outfit-500 ${p_mode === "POTATO" ? "potato-cont" : "pretty-cont"}`}>
+    <div className={`about-container outfit-500 ${P_MODE === "POTATO" ? "potato-cont" : "pretty-cont"}`}>
       <div className="app-header">
         <img src={logo} className="app-logo" />
         <h2 className="app-title outfit-700">McSwiney</h2>
@@ -35,7 +35,7 @@ function About() {
             <div className="about-img-transition-2">...</div>
           </div>
           <div className="about-text ">
-            <h3 className="outfit-300">Frontend-developer</h3>
+            <h3 className="outfit-300">Front-end Developer</h3>
             <h2>John (Johnny) McSwiney</h2>
             <p className="outfit-400 tablet-indented">
               A great worker who’s personable and tech savvy. A problem
@@ -54,7 +54,7 @@ function About() {
             <a href="https://github.com/JohnMcSwiney" target="_blank">
               <button className="btn btn-secondary outfit-500"><FaGithub />  Github</button>
             </a>
-            <button className="btn outfit-500">Contact</button>
+            <button className="btn outfit-500" onClick={() => {appContext.updatePopupType(popupTypes[1])}}>Contact</button>
           </div>
         </section>
 
