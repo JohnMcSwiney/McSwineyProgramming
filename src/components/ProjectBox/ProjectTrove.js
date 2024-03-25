@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 
 import './ProjectStyles.css'
 
+import projectJson from './Projects.json'
 
-
-function Project({ projectInfo, index }) {
-  const [evenIndex, setEvenIndex] = useState(false);
+function ProjectTrove({index}) {
+    const [evenIndex, setEvenIndex] = useState(false);
   function isEven(n){
     return(n % 2 == 0);
   }
@@ -15,15 +15,13 @@ function Project({ projectInfo, index }) {
      setEvenIndex(isEven(index));
     }
   },[])
-  
-  
   return (
     <div className={`project-component ${evenIndex ? "project-dark-bg" : "project-light-bg"}`}>
-      <h2>{projectInfo.name}</h2>
-      <p>{projectInfo.desc}</p>
-      {projectInfo.URL != ""  &&
+      <h2>{projectJson.projects[0].name}</h2>
+      <p>{projectJson.projects[0].desc}</p>
+      {projectJson.projects[0].URL != ""  &&
        <a
-       href={projectInfo.URL} 
+       href={projectJson.projects[0].URL} 
        target="_blank"
      >
        <button className="btn btn-primary outfit-600">
@@ -32,7 +30,7 @@ function Project({ projectInfo, index }) {
      </a>
      }
     </div>
-  );
+  )
 }
 
-export default Project;
+export default ProjectTrove

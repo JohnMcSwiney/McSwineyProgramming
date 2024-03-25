@@ -532,3 +532,12 @@ input[type="checkbox"]:checked::before {
   font-weight: 900;
   font-style: normal;
 }
+
+.wip-header{
+  background-color: yellow;
+  text-align: center;
+  color: black;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}

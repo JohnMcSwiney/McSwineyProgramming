@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./aboutstyle.css";
 import "../App.css";
-import "./responsivetext.css"
+import "./responsivetext.css";
 import logo from "../assets/Sm_logo_2x.png";
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png";
 
-import { FaFigma,FaGithub } from "react-icons/fa";
+import { FaFigma, FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { BsPersonRaisedHand } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
@@ -18,12 +18,20 @@ import ProjectCont from "./ProjectBox/ProjectCont";
 import Project from "./ProjectBox/Project";
 
 
+
 function About() {
   const appContext = useAppContext();
   const P_MODE = appContext.appP_Mode;
-  const popupTypes = ["NONE","CONTACT","EXTERNAL"];
+  const popupTypes = ["NONE", "CONTACT", "EXTERNAL"];
+  // const projectInfo = JSON.stringify(projectsJson);
+ 
+
   return (
-    <div className={`about-container outfit-500 ${P_MODE === "POTATO" ? "potato-cont" : "pretty-cont"}`}>
+    <div
+      className={`about-container outfit-500 ${
+        P_MODE === "POTATO" ? "potato-cont" : "pretty-cont"
+      }`}
+    >
       <div className="app-header">
         <img src={logo} className="app-logo" />
         <h2 className="app-title outfit-700">McSwiney</h2>
@@ -41,23 +49,36 @@ function About() {
             <h3 className="outfit-300">Front-end Developer</h3>
             <h2>John (Johnny) McSwiney</h2>
             <p className="outfit-400 tablet-indented">
-              A great worker who’s personable and tech savvy. A problem
-              solver who loves a project, able to find a solution to any problem.
-              Works well in groups and enjoys working with a team. Often the group lead in school because of tenacity and conflict
-              resolution skills. Highly motivated, professional, and hardworking.
+              A great worker who’s personable and tech savvy. A problem solver
+              who loves a project, able to find a solution to any problem. Works
+              well in groups and enjoys working with a team. Often the group
+              lead in school because of tenacity and conflict resolution skills.
+              Highly motivated, professional, and hardworking.
             </p>
           </div>
           <div className="about-buttons">
-            <a href="https://drive.google.com/file/d/1ZF4xbiNarg2b9ObI6oUBmemL__5hKg--/view?pli=1" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1ZF4xbiNarg2b9ObI6oUBmemL__5hKg--/view?pli=1"
+              target="_blank"
+            >
               <button className="btn btn-primary outfit-600">
                 Download Resume
               </button>
             </a>
-            
+
             <a href="https://github.com/JohnMcSwiney" target="_blank">
-              <button className="btn btn-secondary outfit-500"><FaGithub />  Github</button>
+              <button className="btn btn-secondary outfit-500">
+                <FaGithub /> Github
+              </button>
             </a>
-            <button className="btn outfit-500" onClick={() => {appContext.updatePopupType(popupTypes[1])}}>Contact</button>
+            <button
+              className="btn outfit-500"
+              onClick={() => {
+                appContext.updatePopupType(popupTypes[1]);
+              }}
+            >
+              Contact
+            </button>
           </div>
         </section>
 
@@ -88,8 +109,8 @@ function About() {
             <div className="grid-text">
               <h2 className="outfit-600">Figma Prototyping:</h2>
               <p className="outfit-500">
-                Experienced creating Figma Prototypes.Excels at
-                creating beautiful designs from ideas quickly.
+                Experienced creating Figma Prototypes.Excels at creating
+                beautiful designs from ideas quickly.
               </p>
             </div>
           </div>
@@ -101,8 +122,8 @@ function About() {
             <div className="grid-text">
               <h2 className="outfit-600">Web Design:</h2>
               <p className="outfit-500">
-                Has a myriad of experience in modern & legacy web
-                technologies, with an eye for detail and a history of attractive designs.
+                Has a myriad of experience in modern & legacy web technologies,
+                with an eye for detail and a history of attractive designs.
               </p>
             </div>
           </div>
@@ -128,8 +149,8 @@ function About() {
             <div className="grid-text">
               <h2 className="outfit-600">Professional:</h2>
               <p className="outfit-500">
-                Shows up on time, completes tasks and meets
-                deadlines. A great friendly co-worker, with a healthy sense of humor.
+                Shows up on time, completes tasks and meets deadlines. A great
+                friendly co-worker, with a healthy sense of humor.
               </p>
               {/* <p className="outfit-500">
                 I show up on time, I do my job well and I'm proud of my work. I
@@ -139,11 +160,9 @@ function About() {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       {/* // End of: what I do */}
-      <ProjectCont>
-        <Project/>
-      </ProjectCont>
+      <ProjectCont/>
     </div>
   );
 }

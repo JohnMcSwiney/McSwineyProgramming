@@ -1,10 +1,27 @@
 .proj-parent-container{
     display: block;
-    background-color: rgba(255, 255, 0, 0.462);
-    height: 30rem !important;
+    /* background-color: rgba(255, 255, 0, 0.462); */
+    /* height: 30rem !important; */
     width: 100%;
     position: relative;
-    /* padding: 20rem 5rem; */
+    padding:5rem 0rem;
     margin: 4rem auto;
     box-sizing: border-box;
+}
+
+.project-component{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 30rem;
+    padding:5rem 10rem;
+}
+.project-dark-bg{
+    background-color: var(--bg-shadow-light);
+    border-top: 1px solid var(--bg-shadow);
+    border-bottom: 1px solid var(--bg-shadow);
+    
+    
+}
+.project-light-bg{
+
 }
