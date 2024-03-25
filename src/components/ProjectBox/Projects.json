@@ -1,0 +1,37 @@
+{
+    "projects": [
+        { 
+            "name": "test",
+            "URL": "no",
+            "git": "", 
+            "pics": [
+                ""
+            ],
+            "icon": "",
+            "desc": "",
+            "date": "",
+            "lang":[
+                "",
+                ""
+            ]
+            
+        },
+        { 
+            "name": "test",
+            "URL": "no",
+            "git": "", 
+            "pics": [
+                ""
+            ],
+            "icon": "",
+            "desc": "",
+            "date": "",
+            "lang":[
+                "",
+                ""
+            ]
+            
+        }
+        
+    ]
+}
