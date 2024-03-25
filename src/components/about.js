@@ -14,6 +14,9 @@ import { MdDevices } from "react-icons/md";
 // components & context
 import { useAppContext } from "../context/AppContext";
 import LanguageCont from "./LanguageBox/languageCont";
+import ProjectCont from "./ProjectBox/ProjectCont";
+import Project from "./ProjectBox/Project";
+
 
 function About() {
   const appContext = useAppContext();
@@ -136,7 +139,11 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+      {/* // End of: what I do */}
+      <ProjectCont>
+        <Project/>
+      </ProjectCont>
     </div>
   );
 }
