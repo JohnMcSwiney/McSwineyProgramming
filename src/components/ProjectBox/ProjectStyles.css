@@ -25,3 +25,23 @@
 .project-light-bg{
 
 }
+.icon-cont{
+    display: flex;
+    
+    cursor: inherit;
+    flex-direction: column;
+    background-color: yellow;
+}
+.icon {
+    display: flex;
+    
+    color: white;
+    background-color: var(--bg);
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    position: relative;
+    z-index: 2;
+}
+.icon:hover {
+    scale: 1.1;
+}
