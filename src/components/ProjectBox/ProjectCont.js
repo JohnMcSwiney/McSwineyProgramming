@@ -5,7 +5,7 @@ import './ProjectStyles.css';
 
 import projectsJson from "./Projects.json";
 
-import ProjectTrove from './ProjectTrove';
+import ProjectTrove from './projectTrove';
 
 function ProjectCont() {
   let projectArray = projectsJson.projects 

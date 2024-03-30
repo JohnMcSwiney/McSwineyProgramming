@@ -1,3 +1,12 @@
+/* Screen sizes:
+320px — 480px: Mobile devices                 @media only screen and (max-width: 480px) {}
+481px — 768px: iPads, Tablets                 @media only screen and (min-width: 481px) and (max-width: 768px) {}
+769px — 1024px: Small screens, laptops        @media only screen and (min-width: 769px) and (max-width: 1024px) {}
+1025px — 1200px: Desktops, large screens      @media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+1201px and more —  Extra large screens, TV    @media only screen and (min-width: 1201px) {}
+* https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-width-for-mobile-responsive-design/ *
+*/
+
 .proj-parent-container{
     display: block;
     /* background-color: rgba(255, 255, 0, 0.462); */
@@ -14,6 +23,10 @@
     box-sizing: border-box;
     min-height: 30rem;
     padding:5rem 10rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
 }
 .project-dark-bg{
     background-color: var(--bg-shadow-light);
@@ -25,23 +38,89 @@
 .project-light-bg{
 
 }
-.icon-cont{
+
+.project-title{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* align-items: center; */
+    height: fit-content;
+    font-weight: 500   ;
+    margin-bottom: 3rem;
+
+}.project-title h2{
+    font-weight: 500;
+    font-size: 5rem;
+}
+.project-title h3{
+    font-size: 3rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.technology-cont{
     display: flex;
     
     cursor: inherit;
-    flex-direction: column;
-    background-color: yellow;
+    /* flex-direction: column; */
+    /* background-color: rgb(21, 255, 0); */
+    justify-content: end;
+    gap: 1.5rem;
+    position: relative;
+    max-width: 40rem;
+    height: 3rem;
+    /* position: relative; */
+    /* padding-top: 2rem; */
+/* background-color: yellow; */
+    position: absolute; 
+    top: 0;
+    right: 0;
+
+    padding: 8rem 10rem 0rem 0rem;
+    
 }
-.icon {
+.technology-title{
+    position: absolute; 
+    top: 6.25rem;
+    right: 10rem;
+    z-index: 3;
+}
+.technology-icon {
     display: flex;
     
     color: white;
     background-color: var(--bg);
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all ease-in-out 0.2s;
     position: relative;
     z-index: 2;
+    width: fit-content;
+    align-items: center;
+    gap: 0.10rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem !important;
 }
-.icon:hover {
+.project-description{
+    height: 20rem;
+}
+.project-description p{
+    font-size: 2rem;
+    opacity: 0.9;
+    /* font-weight: 50; */
+}
+/* .technology-icon:hover {
     scale: 1.1;
-}
+} */
+
+
+
+/* 320px — 480px: Mobile devices                 */
+ @media only screen and (max-width: 480px) {}
+/* 481px — 768px: iPads, Tablets                  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+/* 769px — 1024px: Small screens, laptops         */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+/* 1025px — 1200px: Desktops, large screens       */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+/* 1201px and more —  Extra large screens, TV     */
+@media only screen and (min-width: 1201px) {}

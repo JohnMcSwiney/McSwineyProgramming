@@ -9,6 +9,8 @@
             ],
             "icon": "",
             "desc": "TroveMusic is a Full-stack music sharing platform created by my SAIT Capstone group and I. Trove features a fully responsive & attractive design. I personally worked on the client interface.",
+            "desc2": "Trove was a huge project, it was supposed to be a fully featured music app: meaning it had Artist and Admin sites as well, it was rocky and unpolished but everything worked in the end.",
+            "anec": "In retrospect - Trove was more ambitious than our combined skills would allow - Trove was a good learning experience on how scope creep can really be dangerous when dealing with a deadline.",
             "date": "May 2023",
             "lang":[
                 "React",
