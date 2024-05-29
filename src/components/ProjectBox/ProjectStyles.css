@@ -16,17 +16,24 @@
     padding:5rem 0rem;
     margin: 4rem auto;
     box-sizing: border-box;
+    /* height: fit-content; */
 }
 
 .project-component{
     width: 100%;
     box-sizing: border-box;
-    min-height: 30rem;
-    padding:5rem 10rem;
+    /* min-height: 30rem; */
+    /* padding:5rem 10rem; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
+    height: fit-content;
+    /* background-color: yellow !important; */
+    transition: all 0.3s ease-in-out;
+    
+
 }
 .project-dark-bg{
     background-color: var(--bg-shadow-light);
@@ -46,14 +53,15 @@
     /* align-items: center; */
     height: fit-content;
     font-weight: 500   ;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+
 
 }.project-title h2{
     font-weight: 500;
-    font-size: 5rem;
+
 }
 .project-title h3{
-    font-size: 3rem;
+
     font-weight: 400;
     opacity: 0.8;
 }
@@ -64,25 +72,25 @@
     cursor: inherit;
     /* flex-direction: column; */
     /* background-color: rgb(21, 255, 0); */
-    justify-content: end;
+    /* justify-content: end; */
     gap: 1.5rem;
-    position: relative;
-    max-width: 40rem;
-    height: 3rem;
+    /* position: relative; */
+    /* max-width: 40rem; */
+    /* height: 3rem; */
     /* position: relative; */
     /* padding-top: 2rem; */
 /* background-color: yellow; */
-    position: absolute; 
+    /* position: absolute; 
     top: 0;
-    right: 0;
+    right: 0; */
 
-    padding: 8rem 10rem 0rem 0rem;
+    /* padding: 8rem 10rem 0rem 0rem; */
     
 }
 .technology-title{
-    position: absolute; 
-    top: 6.25rem;
-    right: 10rem;
+    /* position: absolute;  */
+    /* top: 6.25rem; */
+    /* right: 10rem; */
     z-index: 3;
 }
 .technology-icon {
@@ -96,26 +104,118 @@
     z-index: 2;
     width: fit-content;
     align-items: center;
-    gap: 0.10rem;
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem !important;
+    /* gap: 0.10rem; */
+    /* padding: 0.5rem 1rem; */
+
+}
+.site-hyperlink{
+
+    padding: .5rem;
+    box-sizing: border-box;
+    /* background-color: purple; */
 }
 .project-description{
-    height: 20rem;
+    /* height: 20rem; */
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+    color: var(--text);
+    opacity: 0.9;
 }
 .project-description p{
-    font-size: 2rem;
+
     opacity: 0.9;
     /* font-weight: 50; */
 }
 /* .technology-icon:hover {
     scale: 1.1;
 } */
-
-
+.showing{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.not-showing{
+    display: none;
+    opacity: 0;
+    z-index: -20;
+}
+#my-tooltip{
+    z-index: 20;
+}
 
 /* 320px — 480px: Mobile devices                 */
- @media only screen and (max-width: 480px) {}
+ @media only screen and (max-width: 480px) {
+    .project-component{
+        
+        padding:0.5rem 1rem;
+        
+    }
+
+    .project-title{
+        /* margin-bottom: 0rem; */
+        
+    }
+    .project-title h2{
+        font-size: 3rem;
+    }
+    .project-title h3{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .technology-cont{
+        position: relative;
+        width: 90%;
+        padding: 1.5rem 1rem;
+        margin: 1rem auto;
+        /* padding-top: 1rem; */
+        /* margin-bottom: 1rem; */
+        background-color: rgba(255, 255, 255, 0.123);
+        border-radius: 0.5rem;
+    }
+    .technology-title{
+        position: absolute;
+        top: 0;
+        margin-top: 0.5rem;
+        opacity: 0.5;
+        font-weight: 500 !important;
+        font-size: 1rem;
+    }
+    .technology-icon{
+        margin-top: 0.5rem;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        gap: 0.25rem;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .site-hyperlink{
+        width: 100%;
+        /* align-items: center ; */
+        display: flex;
+        justify-content: center;
+    }
+    .site-hyperlink .btn{
+        margin: auto;
+    }
+    .show-more--anchor{
+        margin-bottom: 8rem;
+        color: var(--text);
+        text-decoration: underline;
+        margin-bottom: 0.25rem;
+        font-weight: 700;
+        
+    }
+    .project-description{
+        margin: 1rem 0rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+ }
 /* 481px — 768px: iPads, Tablets                  */
 @media only screen and (min-width: 481px) and (max-width: 768px) {}
 /* 769px — 1024px: Small screens, laptops         */

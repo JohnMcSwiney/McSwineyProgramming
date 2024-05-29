@@ -1,0 +1,129 @@
+/* About text */
+/* this file contains text size changes at weird break points */
+    h2{
+        transition: all 0.05s ease-in-out;
+    }
+    p {
+
+
+        opacity: 0.9;
+        transition: all 0.05s ease-in-out;
+    }
+
+
+/*Mobile devices*/
+@media only screen and (max-width: 480px) {
+    h1{
+
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1.15rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile lg */
+@media only screen and (min-width: 481px) and (max-width: 526px) {
+    
+}
+
+/*iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/*Small screens*/
+@media only screen and (min-width: 769px) and (max-width: 780px) {
+   p {
+        font-size: 15.5px;
+        /* color: orange; */
+    }
+}
+
+/*laptops 1*/
+@media only screen and (min-width: 781px) and (max-width: 879px) {
+    p {
+        font-size: 16.5px;
+        /* color: red; */
+    }
+}
+
+/*laptops 2*/
+@media only screen and (min-width: 880px) and (max-width: 953px) {
+    p {
+        font-size: 18px;
+        /* color: rgb(89, 255, 0); */
+    }
+}
+
+@media only screen and (min-width: 954px) and (max-width: 1024px) {
+    p {
+        font-size: 20px;
+        /* color: rgb(0, 255, 234); */
+    }
+}
+
+/*Desktops, large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/*Extra large screens, TV*/
+@media only screen and (min-width: 1201px) and (max-width: 1354px) {
+    
+
+    h3 {
+
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    p {
+        opacity: 0.9;
+        font-size: 23px;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1355px) and (max-width: 1599px) {
+    
+    h2 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 22px;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    
+    
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+
+
+    p {
+        font-size: 25px;
+        padding-left: 10px;
+    }
+}

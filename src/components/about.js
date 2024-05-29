@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./aboutstyle.css";
+import "../responsivetext.css";
 import "../App.css";
-import "./responsivetext.css";
+// import "./responsivetextabout.css";
 import logo from "../assets/Sm_logo_2x.png";
 // import pfp from "../assets/pfppixelated.png"
 import pfp from "../assets/johnny1.png";
